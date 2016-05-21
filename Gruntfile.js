@@ -16,6 +16,12 @@ module.exports = function(grunt) {
           'fec_eregs/static/fec_eregs/fec-style/css/main.css': 'fec_eregs/static/fec_eregs/fec-style/css/scss/main.scss'
         }
       }
+    },
+    watch: {
+      sass: {
+        files: ['fec_eregs/static/fec_eregs/fec-style/css/scss/*.scss'],
+        tasks: ['sass']
+      }
     }
   });
 

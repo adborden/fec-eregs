@@ -8,6 +8,7 @@
   "devDependencies": {
     "gulp-sass": "^2.2.0",
     "load-grunt-tasks": "^3.4.1",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^1.1.0",
     "grunt": "^0.4.5"
   },
