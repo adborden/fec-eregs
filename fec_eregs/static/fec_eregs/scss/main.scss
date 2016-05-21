@@ -1,6 +1,7 @@
 /*
  * These libraries and fonts come from fec-style
  */
+@import 'functions';
 // Libraries
 @import 'lib/bourbon/bourbon';
 @import 'lib/neat/neat';
@@ -23,3 +24,7 @@
 
 @import 'headings';
 @import 'components';
+
+$medium-screen: px(640);
+$large-screen: px(860);
+$x-large-screen: px(1088);
