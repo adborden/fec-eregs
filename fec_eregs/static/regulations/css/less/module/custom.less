@@ -86,9 +86,9 @@ a {
 
 @subhead-primary-border: 2px solid @primary;
 @subhead-secondary-border: 1px solid @primary;
-@subhead-background: @cream;
-@toc-border: 1px solid @sand;
-@toc-background: @ivory;
+@subhead-background: @neutral;
+@toc-border: 1px solid @neutral-contrast;
+@toc-background: @neutral;
 
 
 // Header
@@ -102,7 +102,7 @@ a {
 }
 
 .sub-head {
-  background-color: @cream;
+  background-color: @subhead-background;
   border-bottom: @subhead-secondary-border;
   color: @primary;
 }
@@ -110,9 +110,10 @@ a {
 
 // TOC header
 .toc-head {
-  background-color: @cream;
+  background-color: @toc-background;
   border-bottom: @subhead-secondary-border;
 
+  a.current,
   a:hover {
     background-color: @primary;
   }
@@ -135,7 +136,7 @@ a {
   .close &:hover,
   &:hover,
   &.current {
-    color: @cream;
+    color: @toc-background;
     background-color: @primary;
   }
 }
@@ -143,8 +144,12 @@ a {
 
 // TOC
 .panel {
-  background-color: @ivory;
+  background-color: @toc-background;
   border-right: @subhead-primary-border;
+
+  &.close {
+    top: @header_height + @subhead_height + 2 * 34px; // Header, subheader, 2 TOC list items
+  }
 }
 
 .panel-slide {
@@ -193,12 +198,12 @@ a {
 
 .drawer-header .toc-type,
 {
-  background-color: @ivory;
+  background-color: @toc-background;
   border-bottom: @toc-border;
 }
 
 .subpart-heading {
-  background-color: @ivory;
+  background-color: @toc-background;
   border-bottom: @toc-border;
   border-top: @toc-border;
 }
@@ -222,7 +227,7 @@ a {
   border-left: @toc-border;
 
   .expandable {
-    background-color: @ivory;
+    background-color: @toc-background;
     border-bottom: @toc-border;
   }
 
