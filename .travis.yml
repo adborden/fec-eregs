@@ -30,5 +30,6 @@ deploy:
   organization: fec
   space: dev
   manifest: manifest.dev.yml
+  skip_cleanup: true
   on:
-    branch: master
+    branch: travis
